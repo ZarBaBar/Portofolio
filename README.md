@@ -1,0 +1,1 @@
+This repository is a collection of my most treasured works. These works are the result of my hard work and dedication. In it, you will find projects that represent my various areas of expertise, from software development, to the results of my randomness. I hope you will enjoy them.
