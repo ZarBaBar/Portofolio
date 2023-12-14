@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 0.25rem;
+            box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .dropdown li {
+            list-style: none;
+            padding: 0.5rem 1rem;
+        }
+
+        .dropdown li a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .dropdown ul:hover {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="dropdown">
+            <li>
+                <a data-toggle="dropdown">Menu 1</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Menu 1-1</a></li>
+                    <li><a href="#">Menu 1-2</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script src="coba.js"></script>
+</body>
+
+</html>
