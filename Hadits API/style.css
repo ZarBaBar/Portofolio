@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5; /* Light gray background */
+}
+
+.container {
+  background-color: #fff; /* White background */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  width: 400px; /* Adjust width as needed */
+  margin: 20px;
+}
+
+.namaImam,
+.inputUserNumber,
+.pilihBahasa,
+.btn {
+  margin-bottom: 15px;
+}
+
+h4 {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+select,
+input,
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007bff; /* Blue background */
+  color: #fff;
+  cursor: pointer;
+}
+
+.namaImam,
+.pilihBahasa {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  margin-left: 0;
+}
+
+button:hover {
+  background-color: #009bff;
+}
+
+button:active {
+  background-color: rgb(72, 126, 197);
+}
+
+/* Media query untuk ponsel */
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
+
+  .namaImam,
+  .pilihBahasa {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "hadits-api",
+  "version": "1.0.0",
+  "description": "aku sedang mempelajari tentang API, maka dengan project kecil ini aku mempelajari API",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "hadits-api"
+  },
+  "keywords": [
+    "hadits"
+  ],
+  "author": "zarbabar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
