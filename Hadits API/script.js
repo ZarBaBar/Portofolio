@@ -6,7 +6,9 @@ const bahasa = document.querySelector(".bahasa");
 const hasil = document.querySelector(".hasil");
 
 // Memulai Memproses URL dan Inputan User
-button.addEventListener("click", () => {
+
+// Membuat function
+let mulaiHadits = () => {
   //Mengambil Value
   const nomorHaditsValue = nomorHadits.value;
   const namaImamValue = namaImam.value;
@@ -25,18 +27,23 @@ button.addEventListener("click", () => {
 
       // Hadiths Section !
       const hadiths = data.hadiths[0];
-      console.log(hadiths.text);
-      console.log(hadiths.reference.book);
-      console.log(hadiths.reference.hadith);
+      const haditsText = hadiths.text;
+      const haditsBook = hadiths.reference.book;
+      const haditsRef = hadiths.reference.hadith;
 
       // Nulis ke HTML
       hasil.innerHTML(`
-      <div class="metadata">
-        ${sectionMetadata}
+      <div>
+      ${sectionMetadata}
+      ${haditsText}
+      ${haditsBook}
+      ${haditsRef}
       </div>
       `);
     })
     .catch((error) => {
       console.log(error);
     });
-});
+};
+
+button.addEventListener("click", mulaiHadits);
