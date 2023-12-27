@@ -23,7 +23,11 @@ let mulaiHadits = () => {
     .then((data) => {
       // Metadata section !
       const metadata = data.metadata;
-      const sectionMetadata = metadata.section;
+      const sectionMetadata = JSON.stringify(metadata.section);
+      const splitMetadata = sectionMetadata.split(":");
+
+      const splitData1 = splitMetadata[0].slice(2, -1);
+      const splitData2 = splitMetadata[1].slice(1, -2);
 
       // Hadiths Section !
       const hadiths = data.hadiths[0];
@@ -32,14 +36,19 @@ let mulaiHadits = () => {
       const haditsRef = hadiths.reference.hadith;
 
       // Nulis ke HTML
-      hasil.innerHTML(`
-      <div>
-      ${sectionMetadata}
-      ${haditsText}
-      ${haditsBook}
-      ${haditsRef}
+      hasil.innerHTML = `
+      <div class = "hasilHadits">
+      <div class="pembagian">
+        ${splitData1} ${splitData2}
       </div>
-      `);
+      <div class="text">
+        ${haditsText}
+      </div>
+      <div class="book ref">
+        Book : ${haditsBook}  Chapter : ${haditsRef}
+      </div>
+      </div>
+      `;
     })
     .catch((error) => {
       console.log(error);
