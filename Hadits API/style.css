@@ -1,9 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
-  font-family: sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,6 +65,28 @@ button:hover {
 
 button:active {
   background-color: rgb(72, 126, 197);
+}
+
+.pembagian,
+.text,
+.ref,
+.book {
+  padding: 0.5em;
+  margin: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.pembagian,
+.text {
+  font-size: 1.2em;
+}
+
+.pembagian {
+  text-align: center;
+}
+
+.book,
+.ref {
+  font-size: 0.89em;
 }
 
 /* Media query untuk ponsel */
