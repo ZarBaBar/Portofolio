@@ -1,0 +1,117 @@
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Tahoma;
+  background-color: paleturquoise;
+}
+
+.title {
+  background-color: paleturquoise;
+  color: black;
+  font-size: 12px;
+  text-transform: lowercase;
+  font-weight: 400;
+  text-align: center;
+  padding: 4px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 92vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid rgb(91, 172, 238);
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(91, 172, 238);
+}
+input::placeholder {
+  color: black;
+}
+
+label {
+  font-size: 20px;
+}
+input {
+  border: none;
+  border-bottom: 3px solid black;
+  padding: 16px 8px;
+  font-size: 18px;
+  background-color: transparent;
+  transition: 795ms;
+}
+
+input:focus {
+  background-color: white;
+  transition: 795ms;
+}
+
+.gender {
+  display: inline-flex;
+  margin: 10px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  font-size: 12px;
+}
+.female,
+.male {
+  padding: 20px;
+  margin: 0px 10px;
+  color: black;
+  border-radius: 10%;
+}
+
+img {
+  width: 45px;
+  height: 45px;
+}
+
+.male {
+  border: 1px solid rgb(64, 134, 226);
+  background-color: rgb(64, 134, 226);
+}
+
+.female {
+  border: 1px solid pink;
+  background-color: pink;
+}
+
+.hasil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  color: black;
+  background-color: white;
+  padding: 3px;
+  margin-top: 8px;
+  border-radius: 5px;
+}
+
+.nama {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

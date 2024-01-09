@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="title">Prediksi Gender Berdasarkan Nama Awalan</h1>
+    <main>
+        <div class="container">
+            <div class="nama">
+                <h1>HALO!</h1>
+            </div>
+            <div class="gender">
+                <div class="female">
+                    <img src="female.png" alt="female">
+                    <h3>Cewek</h3>
+                    <div class="femaleHsl"></div>
+                </div>
+                <div class="male">
+                    <img src="male.png" alt="male">
+                    <h3>Cowok</h3>
+                    <div class="maleHsl"></div>
+                </div>
+            </div>
+            <div class="form">
+                <label for="apake">Masukkan nama depan</label>
+                <input type="text" placeholder="contoh: asep" onkeydown="predict(event)">
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>
